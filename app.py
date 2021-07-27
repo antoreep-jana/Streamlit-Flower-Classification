@@ -39,7 +39,7 @@ else:
   image = Image.open(file)
   st.image(image, use_column_width = True)
   predictions = import_and_predict(image, model)
-  class_names = ['daisy', 'dandelion', 'roses', 'sunflowers','tulips']
+  class_names = ['daisy', 'dandelion', 'rose', 'sunflower','tulip']
 
   string = "This image most likely is : " + class_names[np.argmax(predictions)]
   st.success(string)
