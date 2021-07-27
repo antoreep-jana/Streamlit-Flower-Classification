@@ -2,10 +2,6 @@ import streamlit as st
 import tensorflow as tf 
 import os 
 
-os.system("apt update")
-os.system("apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6")
-
-
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 
@@ -22,7 +18,6 @@ st.write("""
 
 
 file = st.file_uploader("Please upload an flower image", type = ['jpg', 'png'])
-import cv2 
 from PIL import Image, ImageOps 
 import numpy as np 
 
